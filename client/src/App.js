@@ -6,16 +6,16 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { themeSettings } from "theme";
 import Layout from "pages/layout";
 import Dashboard from "pages/dashboard";
-// import Products from "pages/products";
-// import Customers from "pages/customers";
-// import Transactions from "pages/transactions";
-// import Geography from "pages/geography";
-// import Overview from "pages/overview";
-// import Daily from "pages/daily";
-// import Monthly from "pages/monthly";
-// import Breakdown from "pages/breakdown";
-// import Admin from "pages/admin";
-// import Performance from "pages/performance";
+import Products from "pages/products";
+import Customers from "pages/customers";
+import Transactions from "pages/transactions";
+import Geography from "pages/geography";
+import Sales from "pages/sales";
+import Daily from "pages/daily";
+import Monthly from "pages/monthly";
+import Breakdown from "pages/breakdown";
+import Admin from "pages/admin";
+import Performance from "pages/performance";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -29,16 +29,16 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              {/* <Route path="/products" element={<Products />} />
+              <Route path="/products" element={<Products />} />
               <Route path="/customers" element={<Customers />} />
               <Route path="/transactions" element={<Transactions />} />
               <Route path="/geography" element={<Geography />} />
-              <Route path="/overview" element={<Overview />} />
+              <Route path="/overview" element={<Sales />} />
               <Route path="/daily" element={<Daily />} />
               <Route path="/monthly" element={<Monthly />} />
               <Route path="/breakdown" element={<Breakdown />} />
               <Route path="/admin" element={<Admin />} />
-              <Route path="/performance" element={<Performance />} /> */}
+              <Route path="/performance" element={<Performance />} />
             </Route>
           </Routes>
         </ThemeProvider>
