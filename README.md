@@ -6,7 +6,7 @@ This project was inspired by the project of Ed Roh (@EdRohDev).
 https://www.youtube.com/watch?v=0cPCMIuDk2I
 
 
-![dashboard](src/assets/Screenshot.png)
+![dashboard](client/src/assets/Screenshot.png)
 
 
 ## Available Scripts
